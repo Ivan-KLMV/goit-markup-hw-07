@@ -19,7 +19,8 @@
   transition: bacground-color 250ms $cubic-bezier,
     box-shadow 250ms $cubic-bezier;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-white;
     background-color: $color-blue;
     box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
