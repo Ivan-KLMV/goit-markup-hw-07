@@ -36,6 +36,12 @@
 .projects__link {
   transition: box-shadow 250ms $cubic-bezier;
 
+  &:hover,
+  &:focus {
+    box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f,
+      0px 1px 1px 0px #0000001f;
+  }
+
   &:hover .projects__text,
   &:focus .projects__text {
     transform: translateY(0);
