@@ -325,25 +325,24 @@
         <div>
           <form class="subscription">
             <p class="subscription__title">Підпишіться на розсилку</p>
-            <label
-              ><span class="visually-hidden">E-mail</span>
-              <div>
-                <input
-                  type="projects__filter"
-                  placeholder="E-mail"
-                  class="subscription__field"
-                  name="field"
-                /><button type="submit" class="subscription__btn">
-                  Підписатися<svg
-                    width="24"
-                    height="24"
-                    class="subscription__icon"
-                  >
-                    <use href="./images/icons.svg#icon-send"></use>
-                  </svg>
-                </button>
-              </div>
-            </label>
+            <label class="visually-hidden" for="field">E-mail</label>
+            <div>
+              <input
+                class="subscription__field"
+                type="text"
+                placeholder="E-mail"
+                name="field"
+                id="field"
+              /><button type="submit" class="subscription__btn">
+                Підписатися<svg
+                  width="24"
+                  height="24"
+                  class="subscription__icon"
+                >
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>

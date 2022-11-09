@@ -159,14 +159,6 @@
   color: $color-blue;
   text-decoration: underline;
 }
-.agree-checkbox:checked ~ .check-icon {
-  border-color: $color-blue;
-  background-color: $color-blue;
-}
-
-.agree-checkbox:focus ~ .check-icon {
-  outline: 1px solid $color-blue;
-}
 
 .check-icon {
   display: inline-block;
@@ -176,6 +168,26 @@
   border: 2px solid $text-color;
   border-radius: 2px;
   transition: border 250ms $cubic-bezier, backgroun-color 250ms $cubic-bezier;
+}
+
+.check-icon__mark {
+  opacity: 0;
+  transition: opacity 250ms $cubic-bezier;
+}
+
+.agree-checkbox:checked {
+  & ~ .check-icon {
+    border-color: $color-blue;
+    background-color: $color-blue;
+  }
+
+  & ~ .check-icon > .check-icon__mark {
+    opacity: 1;
+  }
+}
+
+.agree-checkbox:focus ~ .check-icon {
+  outline: 1px solid $color-blue;
 }
 
 .form__btn {
